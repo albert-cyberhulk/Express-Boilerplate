@@ -18,5 +18,10 @@
   "homepage": "https://github.com/albert-cyberhulk/Express-Boilerplate#readme",
   "dependencies": {
     "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "load-grunt-configs": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2"
   }
 }
