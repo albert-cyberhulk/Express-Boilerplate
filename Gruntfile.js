@@ -13,4 +13,10 @@ module.exports = function (grunt) {
     });
 
     grunt.initConfig(config);
+
+    // starts dev server on local env
+    grunt.registerTask('serve', [
+        'express:dev',
+        'watch'
+    ]);
 };
