@@ -44,6 +44,9 @@ build/Release
 node_modules/
 jspm_packages/
 
+# sass cache
+.sass-cache
+
 # Typescript v1 declaration files
 typings/
 
