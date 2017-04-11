@@ -25,4 +25,4 @@ Db.prototype.connect = function () {
 
 var dbConnection = new Db();
 
-module.exports = dbConnection.connect();
+module.exports = dbConnection;
