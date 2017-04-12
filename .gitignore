@@ -44,6 +44,12 @@ build/Release
 node_modules/
 jspm_packages/
 
+# compiled css files
+server/public/front/src/styles/css/
+
+# sass cache
+.sass-cache
+
 # Typescript v1 declaration files
 typings/
 

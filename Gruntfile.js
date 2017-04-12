@@ -16,6 +16,7 @@ module.exports = function (grunt) {
 
     // starts dev server on local env
     grunt.registerTask('serve', [
+        'sass',
         'express:dev',
         'watch'
     ]);
