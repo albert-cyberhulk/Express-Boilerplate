@@ -7,5 +7,11 @@ module.exports = {
         options: {
             spawn: false
         }
+    },
+    sass: {
+        files: [
+            '<%= project.styles.src %>/**/*.scss'
+        ],
+        tasks: ['sass']
     }
 };
