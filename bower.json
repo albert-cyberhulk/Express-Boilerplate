@@ -1,0 +1,15 @@
+{
+  "name": "express-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate for fast bootstrap of express based applications",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/albert-cyberhulk/Express-Boilerplate",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
