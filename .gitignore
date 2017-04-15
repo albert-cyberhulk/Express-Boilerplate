@@ -70,3 +70,6 @@ typings/
 
 # dotenv environment variables file
 .env
+
+# exclude custom modules
+!server/node_modules
