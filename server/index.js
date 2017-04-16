@@ -1,5 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var compression = require('compression');
 var app = express();
 var path = require('path');
 
@@ -16,6 +17,12 @@ module.exports = {
         app.use(bodyParser.json());
         app.use(bodyParser.urlencoded({
             extended: true
+        }));
+
+        app.use(compression({
+            filter: function (req, res) {
+                return compression.filter(req, res)
+            }
         }));
 
         app.listen(3000, function () {
