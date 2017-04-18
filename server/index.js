@@ -1,3 +1,4 @@
+var allConfigs = require('common/config/env');
 var express = require('express');
 var bodyParser = require('body-parser');
 var i18n = require('i18n-express');
@@ -7,7 +8,7 @@ var path = require('path');
 var router = express.Router();
 
 module.exports = {
-    start: function (app, config) {
+    start: function (app, config, entry) {
         app.engine('.html', require('ejs').__express);
         app.set('view engine', 'ejs');
         app.set('views', path.join(__dirname, config.viewPath));
@@ -35,7 +36,12 @@ module.exports = {
         }));
 
         app.use('/', router);
-
         require(config.router)(router);
+
+        if (entry) {
+            app.listen(allConfigs.port, function () {
+                console.log('Express server listening on port', allConfigs.port);
+            });
+        }
     }
 };
