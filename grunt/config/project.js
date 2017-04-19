@@ -7,5 +7,8 @@ module.exports = {
     styles: {
         dist: path.join(feAssets, 'styles', 'css'),
         src: path.join(feAssets, 'styles', 'scss')
+    },
+    views: {
+        src: path.join(feAssets, 'views')
     }
 };
