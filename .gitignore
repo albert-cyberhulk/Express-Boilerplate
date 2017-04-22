@@ -71,5 +71,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# custom config file
+server/node_modules/common/config/dev.json
+
 # exclude custom modules
 !server/node_modules
