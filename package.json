@@ -23,7 +23,7 @@
     "ejs": "^2.5.6",
     "express": "^4.15.2",
     "i18n-express": "^1.1.2",
-    "mongodb": "^2.2.25",
+    "mongodb": "^3.6.1",
     "mongoose": "^5.9.12"
   },
   "devDependencies": {
